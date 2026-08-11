@@ -1,18 +1,107 @@
-<html> 
-<head>
-  <body bgcolor="gray"</body>
-  <title>login</title>
-  <center><font face="new time roman" size="10" color="black">login</font></center>
-  <table border="0" cellpadding="10" cellspacing="10" align="center" width="80%" bgcolor="" style="border-radius:10px">
+<!DOCTYPE html>
+<html>
 
-<body><center>
-<<form action="peta2.html">
-  <label for="fname">First name:</label><br>
-  
-<input type="text" id="fname" name="fname" value=" "><br>
-  <label for="lname">Last name:</label><br>
-  
-<input type="text" id="lname" name="lname" value=""><br><br>
-  <input type="submit" value="Submit">
-</form> 
-</center>
+<head>
+    <title>Login</title>
+
+    <style>
+        body {
+            background-color: gray;
+            font-family: "Times New Roman", serif;
+        }
+
+        .login-box {
+            background-color: white;
+            width: 350px;
+            padding: 30px;
+            margin: 100px auto;
+            border-radius: 15px;
+            box-shadow: 0 0 15px black;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            margin-bottom: 25px;
+            color: #555555;
+        }
+
+        label {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin-top: 8px;
+            margin-bottom: 18px;
+            border: 1px solid gray;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 12px 35px;
+            border-radius: 8px;
+            font-size: 17px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #444444;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 14px;
+            color: #666666;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="login-box">
+
+    <h1>LOGIN</h1>
+
+    <div class="subtitle">
+        Welcome to our Tourist Destination Website
+    </div>
+
+    <form action="peta2.html">
+
+        <label for="fname">First Name:</label><br>
+        <input type="text" id="fname" name="fname" value="">
+
+        <label for="lname">Last Name:</label><br>
+        <input type="text" id="lname" name="lname" value="">
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" value="">
+
+        <br>
+
+        <input type="submit" value="LOGIN">
+
+    </form>
+
+    <div class="footer">
+        XI-ARCELLANA
+    </div>
+
+</div>
+
+</body>
+</html>
